@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import csv
 
 url_list = [
-
+	#url products
 ]
 
 csv_product = "product_info.csv"
@@ -61,7 +61,7 @@ for url in url_list:
                              shipping_weight, img_urls])
 
     else:
-        print(f"Не удалось получить данные с {url}")
+        print(f"Didn't get data wtih {url}")
 
 csv_file.close()
-print("Готово!")
+print("Done!")
